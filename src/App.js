@@ -1,14 +1,19 @@
+// src/App.js
 import React from 'react';
 import Header from './components/Header';
 import MainSection from './components/MainSection';
-// Import other components similarly
+import Projects from './components/Projects';
+import Certificates from './components/Certificates';
+import Contact from './components/Contact';
 
 function App() {
   return (
-    <div className="min-h-screen bg-black text-white">
+    <div>
       <Header />
       <MainSection />
-      {/* Insert other components like Footer, Work Section, etc. */}
+      <Projects />
+      <Certificates />
+      <Contact />
     </div>
   );
 }
