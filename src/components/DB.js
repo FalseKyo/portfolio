@@ -1,9 +1,10 @@
 import React from 'react';
+import ResumeFile from '../assets/Resume.pdf';
 
 const DownloadButton = () => {
   const handleDownload = () => {
     const link = document.createElement('a');
-    link.href = '/resume.pdf';  // Path to your resume file
+    link.href = ResumeFile;  // Path to your resume file
     link.download = 'resume.pdf';  // Optional: Filename for the downloaded file
     document.body.appendChild(link);
     link.click();
